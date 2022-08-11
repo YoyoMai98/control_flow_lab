@@ -10,5 +10,16 @@ public class SecretNumber {
         Scanner reader = new Scanner(System.in);
         String guessedInput = reader.nextLine();
         int guessedNumber = Integer.parseInt(guessedInput);
+
+//        if the input is smaller, print "guess higher"
+//        if the input is larger, print "guess lower"
+//        otherwise, print "correct!"
+        if(guessedNumber < secretNumber){
+            System.out.println("guess higher");
+        }else if(guessedNumber > secretNumber){
+            System.out.println("guess lower");
+        }else{
+            System.out.println("correct!");
+        }
     }
 }
